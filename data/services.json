@@ -1,0 +1,246 @@
+{
+  "fund-raising": {
+    "title": "Fund Raising in Bank and NBFC",
+    "description1": "We raise funds for Individual companies & Corporate companies Secured Loan – Working Capital MSME Funding , CGTMSME funding , Unsecured – Business loans, Whether you’re a startup seeking seed funding, a business planning expansion, or an organization with innovative ideas, we connect you with the right funding opportunities. Our services include equity funding, debt financing, assistance, and grant sourcing, all tailored to meet your unique needs. With expert guidance, strategic planning, and seamless execution, Yenom Market ensures that your fundraising journey is smooth, efficient, and result-driven. Trust us to turn your vision into reality!",
+    "description2": "Our team of experts ensures a streamlined fundraising process, offering equity funding, debt solutions, crowdfunding, and investor relations management. With a focus on strategy, innovation, and transparency, we help you access capital while building long-lasting relationships with investors.",
+    "image1": "/service/NBFC-1.webp",
+    "image2": "/service/fund-raising-2.webp",
+    "features": [
+      {
+        "id": "01",
+        "title": "CGTMSE",
+        "text": "Government initiative that provides collateral-free credit guarantees to micro and small enterprises to promote financial inclusion and business growth."
+      },
+      {
+        "id": "02",
+        "title": "MSME",
+        "text": "Businesses that drive economic growth and employment by contributing to manufacturing, services, and innovation."
+      },
+      {
+        "id": "03",
+        "title": "UNSECURED - BUSINESS LOANS",
+        "text": "Loans provided to businesses without the need for collateral, based on the borrower's creditworthiness and financial stability."
+      }
+    ],
+    "benefits": []
+  },
+  "consortium-banking": {
+    "title": "Consortium Banking and Multiple banking",
+    "description1": "We provide expert guidance on Consortium Banking and Multiple Banking to meet diverse funding needs. Consortium Banking is ideal for large-scale projects, where a group of banks collaborates to offer substantial financial support under a unified structure, reducing risk and ensuring streamlined coordination.",
+    "description2": "Multiple Banking allows businesses to work independently with multiple banks, offering flexibility and diverse credit lines to manage varied financial requirements. With Yenom Market’s expertise, businesses can navigate these complex arrangements with ease, ensuring seamless operations and sustainable financial growth.",
+    "image1": "/loan-img-6.jpeg",
+    "image2": "/loan-img-5.png",
+    "features": [
+      {
+        "id": "01",
+        "title": "Collaborative Lending",
+        "text": "Multiple banks share the risk and funding requirements to support large-scale projects."
+      },
+      {
+        "id": "02",
+        "title": "Large Funding Access",
+        "text": "Ideal for businesses requiring significant capital investment through structured bank groups."
+      },
+      {
+        "id": "03",
+        "title": "Centralized Monitoring",
+        "text": "A lead bank coordinates between the borrower and other banks for simplified management."
+      },
+      {
+        "id": "04",
+        "title": "Structured Processes",
+        "text": "Involves a single agreement covering all participating banks, ensuring legal and operational clarity."
+      }
+    ],
+    "benefits": [
+      "Access to large-scale funds.",
+      "Reduced risk for individual lenders.",
+      "Streamlined communication with a single lead bank."
+    ]
+  },
+  "ma-advisory": {
+    "title": "M & A Advisory Solutions",
+    "description1": "Yenom Market offers specialized Mergers & Acquisitions (M&A) Advisory Solutions to help businesses navigate the complex landscape of mergers, acquisitions, and corporate restructuring. Whether you’re looking to acquire, merge, or sell a business, our expert advisory team ensures that you make strategic, well-informed decisions to maximize value, mitigate risks, and achieve your business goals.",
+    "description2": "We provide expert M&A Advisory Solutions to guide businesses through the complexities of mergers, acquisitions, and corporate restructuring. Whether you’re looking to expand through acquisitions, merge for growth, or divest parts of your business, our team offers tailored strategies to maximize value and minimize risk.",
+    "image1": "/service/m&a-1.png ",
+    "image2": "/service/m&a-2.webp",
+    "features": [
+      {
+        "id": "01",
+        "title": "EXPERTISE IN COMPLEX TRANSACTIONS",
+        "text": "We have extensive experience in facilitating M&A deals across diverse industries."
+      },
+      {
+        "id": "02",
+        "title": "End-to-End Support",
+        "text": "From deal inception to post-merger integration, we guide you every step of the way."
+      },
+      {
+        "id": "03",
+        "title": "Maximized Value",
+        "text": "Our focus is on ensuring the best possible outcome for your business."
+      }
+    ],
+    "benefits": []
+  },
+  "bridge-funding": {
+    "title": "Bridge Funding",
+    "description1": "Yenom Market offers Bridge Funding solutions to help businesses and individuals manage short-term financial needs during transitional periods. Whether you’re waiting for long-term financing or require immediate liquidity to close a critical deal, our bridge funding services provide the financial support you need to keep moving forward.",
+    "description2": "Our bridge funding solutions are designed to be flexible and fast, ensuring that your operations or investments never hit a roadblock while waiting for permanent capital.",
+    "image1": "/service/bridge-funding.webp",
+    "image2": "/lone-1.jpg",
+    "features": [
+      {
+        "id": "01",
+        "title": "Quick Access",
+        "text": "Rapid processing to provide funds when time is of the essence."
+      },
+      {
+        "id": "02",
+        "title": "Flexibility",
+        "text": "Customized repayment plans tailored to your expected long-term funding source."
+      },
+      {
+        "id": "03",
+        "title": "Continuity",
+        "text": "Ensuring business projects stay on track while permanent financing is finalized."
+      }
+    ],
+    "benefits": []
+  },
+  "sme-listings": {
+    "title": "SME Listings",
+    "description1": "Yenom Market, we provide expert assistance in SME Listing to help small and medium enterprises (SMEs) unlock new growth opportunities, improve credibility, and access capital markets. Listing your business on a recognized stock exchange ensures transparency, enhances your brand value, and offers a platform for raising funds to fuel expansion.",
+    "description2": "SME Listing refers to the process of listing small and medium enterprises on dedicated SME platforms of stock exchanges, such as the NSE Emerge or BSE SME platform. This allows SMEs to raise equity capital through public offerings and gain recognition in the financial ecosystem.",
+    "image1": "/service/sme-1.jpg",
+    "image2": "/service/sme-2.jpg",
+    "features": [
+      {
+        "id": "01",
+        "title": "Access to Capital",
+        "text": "Raise funds for expansion, working capital, or debt repayment through equity financing."
+      },
+      {
+        "id": "02",
+        "title": "Enhanced Visibility",
+        "text": "Improve brand value and market perception with the credibility of being a listed entity."
+      },
+      {
+        "id": "03",
+        "title": "Improved Governance",
+        "text": "Adopt transparent business practices and governance standards to attract investors."
+      },
+      {
+        "id": "04",
+        "title": "Liquidity for Stakeholders",
+        "text": "Enable existing shareholders to monetize their holdings by offering a liquid platform."
+      },
+      {
+        "id": "05",
+        "title": "Growth Opportunities",
+        "text": "Leverage the listing to explore joint ventures, mergers, and strategic partnerships."
+      }
+    ],
+    "benefits": []
+  },
+  "revival": {
+    "title": "Sick Industries Revival and Restructuring",
+    "description1": "Yenom Market specializes in reviving and restructuring industries facing financial distress, operational challenges, or market downturns. Our structured approach ensures businesses regain their stability, optimize their resources, and reestablish profitability.",
+    "description2": "Infrastructure development involves the planning, design, construction, and maintenance of essential physical and organizational structures and facilities. This includes transportation systems, utilities, communication networks, buildings, and more. In essence, infrastructure serves as the backbone for economic development and plays a key role in enhancing the quality of life and supporting business operations.",
+    "image1": "/service/sick-1.webp",
+    "image2": "/service/sick-2.webp",
+    "features": [
+      {
+        "id": "01",
+        "title": "PROVEN EXPERTISE",
+        "text": "Extensive experience in guiding sick industries toward recovery."
+      },
+      {
+        "id": "02",
+        "title": "End-to-End Support",
+        "text": "Assistance through every step, from diagnosis to implementation."
+      },
+      {
+        "id": "03",
+        "title": "Sustainability",
+        "text": "Focus on building a strong foundation for long-term success."
+      }
+    ],
+    "benefits": []
+  },
+  "private-finance": {
+    "title": "Private Finance",
+    "description1": "Yenom Market, we offer expert Private Finance Solutions tailored to meet the unique needs of businesses and individuals seeking flexible, alternative funding sources. Whether you’re an entrepreneur, startup, or established business, we provide access to private capital and financing options that traditional banks may not offer.",
+    "description2": "Our goal is to connect you with the right financial resources to drive your growth, innovation, and success. We ensure that our private financing solutions are as unique as your vision.",
+    "image1": "/service/private-finance-1.webp",
+    "image2": "/service/private-finance-2.webp",
+    "features": [
+      {
+        "id": "01",
+        "title": "Bespoke Loans",
+        "text": "Highly customized financial products designed for specific client needs."
+      },
+      {
+        "id": "02",
+        "title": "Discretion",
+        "text": "Maintaining high levels of confidentiality for private financial arrangements."
+      },
+      {
+        "id": "03",
+        "title": "Speed",
+        "text": "Often faster than traditional banks due to streamlined decision-making."
+      }
+    ],
+    "benefits": []
+  },
+  "ipo-advisory": {
+    "title": "IPO Advisory Services",
+    "description1": "Yenom Market offers comprehensive IPO Advisory Services to guide businesses through the complex process of going public. Whether you’re looking to raise capital, enhance brand visibility, or expand your operations, our expert team provides strategic insights and hands-on support to ensure a successful Initial Public Offering (IPO).",
+    "description2": "From assessing your business’s readiness and determining its valuation to ensuring regulatory compliance and crafting effective investor relations strategies, we help you navigate each phase with confidence. Our post-IPO support ensures that your company remains compliant and successfully manages its new public status, positioning you for sustained growth and success in the market.",
+    "image1": "/service/iop-3.png",
+    "image2": "/service/ipo-1.webp",
+    "features": [
+      {
+        "id": "01",
+        "title": "EXPERIENCED TEAM",
+        "text": "Our team of experts has extensive experience in successfully navigating the IPO process."
+      },
+      {
+        "id": "02",
+        "title": "Tailored Approach",
+        "text": "We provide customized solutions based on your specific business model and goals."
+      },
+      {
+        "id": "03",
+        "title": "End-to-End Support",
+        "text": "From pre-IPO preparation to post-listing support, we guide you through every phase of the process."
+      }
+    ],
+    "benefits": []
+  },
+  "cibil": {
+    "title": "CIBIL",
+    "description1": "We specialize in providing comprehensive CIBIL correction services for both individuals and companies. Our expert team works diligently to identify inaccuracies, rectify discrepancies, and enhance your credit score.",
+    "description2": "Whether you’re aiming to improve personal credit or manage corporate credit profiles, our tailored solutions ensure optimal results. Our goal is to help you achieve a healthy credit profile for easier access to financial opportunities.",
+    "image1": "/service/cibil-1.jpg",
+    "image2": "/service/cibil-2.jpg",
+    "features": [
+      {
+        "id": "01",
+        "title": "Report Analysis",
+        "text": "Detailed review of credit reports to identify discrepancies and errors."
+      },
+      {
+        "id": "02",
+        "title": "Correction",
+        "text": "Working with credit bureaus to rectify wrong entries and update records."
+      },
+      {
+        "id": "03",
+        "title": "Score Building",
+        "text": "Strategic advice on improving creditworthiness for future loan eligibility."
+      }
+    ],
+    "benefits": []
+  }
+}
