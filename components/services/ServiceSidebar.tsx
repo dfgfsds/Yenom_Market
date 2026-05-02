@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const sidebarServices = [
   { name: "Fund Raising in Bank and NBFC", slug: "fund-raising" },
@@ -24,7 +25,12 @@ const ServiceSidebar = ({ currentSlug }: ServiceSidebarProps) => {
     <div className="flex flex-col gap-10">
 
       {/* Our Services Menu */}
-      <div className="bg-[#f8f6f1] p-8 border-t-4 border-[#d4af37]">
+      <motion.div 
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="bg-[#f8f6f1] p-8 border-t-4 border-[#d4af37]"
+      >
         <h3 className="text-xl font-serif font-bold text-[#0a0a0a] mb-6">Our Services</h3>
         <div className="flex flex-col gap-2">
           {sidebarServices.map((s) => {
@@ -53,10 +59,15 @@ const ServiceSidebar = ({ currentSlug }: ServiceSidebarProps) => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
 
       {/* Get In Touch Mini Form */}
-      <div className="bg-[#f8f6f1] p-8 border-t-4 border-[#d4af37]">
+      <motion.div 
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        className="bg-[#f8f6f1] p-8 border-t-4 border-[#d4af37]"
+      >
         <h3 className="text-xl font-serif font-bold text-[#0a0a0a] mb-6">Get In Touch</h3>
         <form className="flex flex-col gap-4">
           <input
@@ -86,7 +97,7 @@ const ServiceSidebar = ({ currentSlug }: ServiceSidebarProps) => {
             Send Message
           </button>
         </form>
-      </div>
+      </motion.div>
 
     </div>
   );

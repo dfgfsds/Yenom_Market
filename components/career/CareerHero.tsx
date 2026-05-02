@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const CareerHero = () => {
   return (
@@ -21,7 +22,12 @@ const CareerHero = () => {
 
 
       {/* Centered content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="absolute inset-0 flex flex-col items-center justify-center z-10 text-white"
+      >
         <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">Career</h1>
         <nav className="flex items-center gap-2 text-sm text-white/80">
           <Link href="/" className="hover:text-[#d4af37] transition-colors">
@@ -32,7 +38,7 @@ const CareerHero = () => {
           </svg>
           <span className="text-[#d4af37] font-semibold">Career</span>
         </nav>
-      </div>
+      </motion.div>
     </section>
   );
 };

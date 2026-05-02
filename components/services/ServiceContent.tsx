@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface Feature {
   id: string;
@@ -144,7 +145,13 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
     <div className="flex flex-col gap-0">
 
       {/* ─── Hero Banner Image with overlay text ─── */}
-      <div className="relative w-full h-[380px] overflow-hidden rounded-2xl shadow-2xl">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative w-full h-[380px] overflow-hidden rounded-2xl shadow-2xl"
+      >
         <Image src={data.image1} alt={data.title} fill className="object-cover scale-105 hover:scale-100 transition-transform duration-700" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
@@ -153,7 +160,7 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
             {data.title}
           </h2>
         </div>
-      </div>
+      </motion.div>
 
       {/* ─── Quick Highlights (fund-raising specific) ─── */}
       {/* {isFundRaising && (
@@ -173,7 +180,13 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
       )} */}
 
       {/* ─── Description 1 with decorative line ─── */}
-      <div className="mt-10 relative">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="mt-10 relative"
+      >
         <div className="flex items-start gap-5">
           <div className="flex flex-col items-center flex-shrink-0">
             <div className="w-1 h-1 rounded-full bg-[#d4af37]" />
@@ -183,7 +196,7 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
             {data.description1}
           </p>
         </div>
-      </div>
+      </motion.div>
 
       {/* ─── Stats Row ─── */}
       {/* <div
@@ -203,11 +216,23 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
 
       {/* ─── Image 2 with side text ─── */}
       <div className="mt-10 grid md:grid-cols-2 gap-6 items-center">
-        <div className="relative h-[280px] rounded-xl overflow-hidden shadow-xl">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative h-[280px] rounded-xl overflow-hidden shadow-xl"
+        >
           <Image src={data.image2} alt="Service Detail" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-        </div>
-        <div className="flex flex-col gap-5">
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="flex flex-col gap-5"
+        >
           <div className="w-12 h-1 bg-[#d4af37] rounded-full" />
           <blockquote className="text-gray-700 leading-relaxed text-[15px] md:text-base">
             {data.description2}
@@ -221,12 +246,18 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </Link>
-        </div>
+        </motion.div>
       </div>
 
       {/* ─── Benefits Section ─── */}
       {data.benefits && data.benefits.length > 0 && (
-        <div className="mt-12 bg-[#fdfaf3] p-8 rounded-2xl border border-[#d4af37]/10">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="mt-12 bg-[#fdfaf3] p-8 rounded-2xl border border-[#d4af37]/10"
+        >
           <div className="flex items-center gap-4 mb-8">
             <div className="w-8 h-0.5 bg-[#d4af37]" />
             <h3 className="text-xl font-serif font-bold text-[#0a0a0a] uppercase tracking-wider">
@@ -246,11 +277,17 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       )}
 
       {/* ─── Feature Cards ─── */}
-      <div className="mt-12">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="mt-12"
+      >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-8 h-0.5 bg-[#d4af37]" />
           <h3 className="text-xl font-serif font-bold text-[#0a0a0a] uppercase tracking-wider">
@@ -261,7 +298,11 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {data.features.map((f, idx) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
               key={f.id}
               className="group relative bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
             >
@@ -281,10 +322,10 @@ const ServiceContent = ({ data }: ServiceContentProps) => {
 
 
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* ─── CTA Banner ─── */}
       {/* <div className="mt-12 relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#1a0a00] to-[#2a1000] p-10 text-white text-center shadow-2xl">

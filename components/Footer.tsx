@@ -57,12 +57,15 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
             {/* COL 1: LOGO + ABOUT */}
             <div className="flex flex-col gap-6 md:col-span-1">
-              <Image src="/logo-new-1.png" alt="Yenom Market" width={175} height={72} className="object-contain" />
+              <div className="bg-white p-3 rounded-lg w-fit shadow-md">
+                <Image src="/logo-new-1.png" alt="Yenom Market" width={175} height={72} className="object-contain" />
+              </div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Yenom Market is a leading financial services company specializing in business loans, private finance, MSME funding, and more.
               </p>
 
             </div>
+
 
             {/* COL 2: QUICK LINKS */}
             <div className="flex flex-col gap-4">

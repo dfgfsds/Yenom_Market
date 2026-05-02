@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
 
 const CareerForm = () => {
   const [fileName, setFileName] = useState("No file chosen");
@@ -27,7 +28,13 @@ const CareerForm = () => {
       <div className="max-w-3xl mx-auto">
 
         {/* Section label */}
-        <div className="flex flex-col items-center gap-4 mb-12 text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="flex flex-col items-center gap-4 mb-12 text-center"
+        >
           <div className="flex items-center border border-gray-300 px-3 py-2 gap-3 w-fit">
             <div className="w-2 h-2 bg-[#d4a017]" />
             <span className="text-sm font-bold text-gray-800 uppercase tracking-wider">
@@ -37,10 +44,14 @@ const CareerForm = () => {
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0a0a0a]">
             Send Us Your Application
           </h2>
-        </div>
+        </motion.div>
 
         {submitted ? (
-          <div className="bg-white border border-[#d4af37] rounded-sm p-12 text-center shadow-lg">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-white border border-[#d4af37] rounded-sm p-12 text-center shadow-lg"
+          >
             <div className="w-16 h-16 bg-[#d4af37] rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -48,9 +59,13 @@ const CareerForm = () => {
             </div>
             <h3 className="text-2xl font-bold font-serif text-[#0a0a0a] mb-3">Application Submitted!</h3>
             <p className="text-gray-600">Thank you for applying. Our team will review your application and get back to you shortly.</p>
-          </div>
+          </motion.div>
         ) : (
-          <form
+          <motion.form
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             onSubmit={handleSubmit}
             className="bg-white shadow-xl border border-gray-100 p-8 md:p-10 flex flex-col gap-5"
           >
@@ -171,7 +186,7 @@ const CareerForm = () => {
                 </>
               )}
             </button>
-          </form>
+          </motion.form>
         )}
       </div>
     </section>
