@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const bullets = [
   {
@@ -28,7 +29,13 @@ const WhyFundraise = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
         {/* RIGHT: text (order 2) */}
-        <div className="flex flex-col gap-6 order-2 md:order-1">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col gap-6 order-2 md:order-1"
+        >
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0a0a0a] leading-tight">
             Why Fundraise with Yenom Market?
           </h2>
@@ -49,10 +56,16 @@ const WhyFundraise = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* LEFT: image (order 1) */}
-        <div className="relative w-full aspect-[4/3] group order-1 md:order-2">
+        <motion.div 
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="relative w-full aspect-[4/3] group order-1 md:order-2"
+        >
           {/* Decorative elements */}
           <div className="absolute -top-6 -left-6 w-32 h-32 border-t-4 border-l-4 border-[#d4a017]/30 rounded-tl-3xl z-0" />
           <div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-4 border-r-4 border-[#d4a017]/30 rounded-br-3xl z-0" />
@@ -65,7 +78,7 @@ const WhyFundraise = () => {
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>

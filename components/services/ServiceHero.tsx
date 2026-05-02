@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface ServiceHeroProps {
   title: string;
@@ -25,7 +26,12 @@ const ServiceHero = ({ title, backgroundImage }: ServiceHeroProps) => {
 
 
       {/* Centered content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-white text-center px-6">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="absolute inset-0 flex flex-col items-center justify-center z-10 text-white text-center px-6"
+      >
         <h1 className="text-3xl md:text-5xl font-bold font-serif mb-4 leading-tight">{title}</h1>
         <nav className="flex items-center justify-center gap-2 text-sm text-white/80">
 
@@ -37,7 +43,7 @@ const ServiceHero = ({ title, backgroundImage }: ServiceHeroProps) => {
           </svg>
           <span className="text-[#d4af37] font-semibold">{title}</span>
         </nav>
-      </div>
+      </motion.div>
     </section>
   );
 };

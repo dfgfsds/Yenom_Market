@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const points = [
   {
@@ -27,17 +28,29 @@ const CareerOpportunities = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
         {/* LEFT: image */}
-        <div className="relative w-full aspect-[4/3] overflow-hidden shadow-2xl">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative w-full aspect-[4/3] overflow-hidden shadow-2xl"
+        >
           <Image
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800"
             alt="Team Opportunities"
             fill
             className="object-cover"
           />
-        </div>
+        </motion.div>
 
         {/* RIGHT: content */}
-        <div className="flex flex-col gap-6">
+        <motion.div 
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="flex flex-col gap-6"
+        >
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0a0a0a] leading-tight">
             Unlock Opportunities with Us!
           </h2>
@@ -69,7 +82,7 @@ const CareerOpportunities = () => {
               <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
-        </div>
+        </motion.div>
 
       </div>
     </section>

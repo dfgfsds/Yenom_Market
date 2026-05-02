@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -27,7 +28,13 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
 
         {/* LEFT COLUMN: CONTACT INFO (5 cols) */}
-        <div className="lg:col-span-5 flex flex-col gap-12">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="lg:col-span-5 flex flex-col gap-12"
+        >
           <div className="flex flex-col gap-4">
             <div className="flex items-center border border-gray-200 px-3 py-2 gap-3 w-fit">
               <div className="w-2 h-2 bg-[#d4a017]" />
@@ -79,10 +86,16 @@ const ContactSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* RIGHT COLUMN: FORM (7 cols) */}
-        <div className="lg:col-span-7">
+        <motion.div 
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="lg:col-span-7"
+        >
           <div className="relative p-8 md:p-12 rounded-[2rem] bg-[#f8f6f1] border border-gray-200 shadow-xl overflow-hidden group">
             {/* Ambient light effect */}
             <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#d4af37]/5 rounded-full blur-[80px] group-hover:bg-[#d4af37]/10 transition-all duration-700" />
@@ -156,11 +169,17 @@ const ContactSection = () => {
               </form>
             )}
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* MAP SECTION: Stylized with light theme integration */}
-      <div className="mt-16 md:mt-24 max-w-7xl mx-auto overflow-hidden rounded-[2rem] md:rounded-[2.5rem] border border-gray-200 shadow-xl relative group">
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="mt-16 md:mt-24 max-w-7xl mx-auto overflow-hidden rounded-[2rem] md:rounded-[2.5rem] border border-gray-200 shadow-xl relative group"
+      >
         <div className="relative w-full h-[350px] md:h-[450px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7645163351543!2d80.2223846!3d13.0360814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267ed9d73d6e5%3A0xc48c484848484848!2sWest%20Mambalam%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
@@ -172,7 +191,7 @@ const ContactSection = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
