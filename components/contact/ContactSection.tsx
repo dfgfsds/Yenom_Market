@@ -182,7 +182,7 @@ const ContactSection = () => {
       >
         <div className="relative w-full h-[350px] md:h-[450px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7645163351543!2d80.2223846!3d13.0360814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267ed9d73d6e5%3A0xc48c484848484848!2sWest%20Mambalam%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3886.8860302366597!2d80.21629717507773!3d13.042925787279032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAyJzM0LjUiTiA4MMKwMTMnMDcuOSJF!5e0!3m2!1sen!2sin!4v1778130824986!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -197,3 +197,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
