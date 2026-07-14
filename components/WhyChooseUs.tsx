@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
         <div className="w-full md:w-1/2 relative">
           <div className="relative aspect-[4/3] overflow-hidden shadow-2xl">
             <Image
-              src="https://www.flyingsolo.com.au/wp-content/uploads/2021/01/growth-3.jpg"
+              src="/growth-3.jpg"
               alt="Why Choose Yenom Market"
               fill
               className="object-cover"
